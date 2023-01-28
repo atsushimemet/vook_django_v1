@@ -105,9 +105,9 @@
                     <div class="mv__text-area">
                         <h1 class="mv__heading-img">
                             <picture>
-                                <source srcset="./image/mv-text-sp.svg" media="(max-width: 767px)" />
-                                <source srcset="./image/mv-text.svg" media="(max-width: 1023px)" />
-                                <img src="./image/mv-text.svg" alt="完全オンラインでプログラミング習得 AIプログラミング講座">
+                                <source srcset="{% static 'image/mv-text-sp.svg' %}" media="(max-width: 767px)" />
+                                <source srcset="{% static 'image/mv-text.svg' %}" media="(max-width: 1023px)" />
+                                <img src="{% static 'image/mv-text.svg' %}" alt="完全オンラインでプログラミング習得 AIプログラミング講座">
                             </picture>
                         </h1>
                         <p class="mv__text">
@@ -118,9 +118,9 @@
                     </div>
                     <div class="mv__img-box">
                         <picture>
-                            <source srcset="./image/mv-img-sp.png" media="(max-width: 767px)" />
-                            <source srcset="./image/mv-img.png" media="(max-width: 1023px)" />
-                            <img src="./image/mv-img.png" alt="ファーストビューイラスト">
+                            <source srcset="{% static 'image/mv-img-sp.png' %}" media="(max-width: 767px)" />
+                            <source srcset="{% static 'image/mv-img.png' %}" media="(max-width: 1023px)" />
+                            <img src="{% static 'image/mv-img.png' %}" alt="ファーストビューイラスト">
                         </picture>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                     <h2 class="about__heading">AIプログラミング講座とは？</h2>
                     <div class="about__flex-box">
                         <div class="about__img-box">
-                            <img src="./image/about-img_exclude_kaggle.png" alt="Aboutイラスト">
+                            <img src="{% static 'image/about-img_exclude_kaggle.png' %}" alt="Aboutイラスト">
                         </div>
                         <div class="about__text-area">
                             <p class="about__text">
@@ -155,7 +155,7 @@
                     <li class="about__card">
                         <h3 class="about__card-title">挫折率</h3>
                         <div class="about__number-img about__number-img--01">
-                            <img src="./image/about-text_1.svg" alt="0%">
+                            <img src="{% static './image/about-text_1.svg' %}" alt="0%">
                         </div>
                         <div class="about__card-lead">楽しみながら学べるから<br>挫折しない</div>
                         <p class="about__card-text">
@@ -169,7 +169,7 @@
                     <li class="about__card">
                         <h3 class="about__card-title">未経験者率</h3>
                         <div class="about__number-img about__number-img--02">
-                            <img src="./image/about-text_2.svg" alt="100%">
+                            <img src="{% static 'image/about-text_2.svg' %}" alt="100%">
                         </div>
                         <div class="about__card-lead">未経験でも大丈夫</div>
                         <p class="about__card-text">
@@ -188,10 +188,10 @@
             <div class="feature__top-bg"></div>
             <div class="l-main__inner feature__inner">
                 <span class="feature__object--01">
-                    <img src="./image/feature-object_1.png" alt="オブジェクト">
+                    <img src="{% static './image/feature-object_1.png' %}" alt="オブジェクト">
                 </span>
                 <span class="feature__object--02">
-                    <img src="./image/feature-object_2.png" alt="オブジェクト">
+                    <img src="{% static './image/feature-object_2.png' %}" alt="オブジェクト">
                 </span>
                 <div class="c-heading">
                     <h2 class="c-heading__primary feature__heading">コースの特徴</h2>
@@ -220,9 +220,10 @@
                     </div>
                     <div class="feature__img-box">
                         <picture>
-                            <source srcset="./image/feature-img-sp_1.png" media="(max-width: 767px)" />
-                            <source srcset="./image/feature-img_1_exclude_kaggle.png" media="(max-width: 1023px)" />
-                            <img src="./image/feature-img_1_exclude_kaggle.png" alt="特徴イメージ">
+                            <source srcset="{% static 'image/feature-img-sp_1.png' %}" media="(max-width: 767px)" />
+                            <source srcset="{% static 'image/feature-img_1_exclude_kaggle.png' %}"
+                                media="(max-width: 1023px)" />
+                            <img src="{% static 'image/feature-img_1_exclude_kaggle.png' %}" alt="特徴イメージ">
                         </picture>
                     </div>
                 </div>
@@ -230,14 +231,14 @@
                 <div class="feature__flex-box--bottom">
                     <div class="feature__img-box">
                         <picture>
-                            <source srcset="./image/feature-img-sp_2.png" media="(max-width: 767px)" />
-                            <source srcset="./image/feature-img_2.png" media="(max-width: 1023px)" />
-                            <img src="./image/feature-img_2.png" alt="特徴イメージ">
+                            <source srcset="{% static 'image/feature-img-sp_2.png' %}" media="(max-width: 767px)" />
+                            <source srcset="{% static 'image/feature-img_2.png' %}" media="(max-width: 1023px)" />
+                            <img src="{% static 'image/feature-img_2.png' %}" alt="特徴イメージ">
                         </picture>
                     </div>
                     <div class="feature__text-area">
                         <span class="feature__object--04">
-                            <img src="./image/feature-object_4.png" alt="オブジェクト">
+                            <img src="{% static 'image/feature-object_4.png' %}" alt="オブジェクト">
                         </span>
                         <h3 class="feature__title">全額返金保証</h3>
                         <p class="feature__text">カリキュラムにご納得頂けなければ、全額返金致します。<br><br class="u-tb_pc">
@@ -257,10 +258,10 @@
                 <div class="voice__container">
                     <div class="voice__wrapper">
                         <div class="voice__img-box">
-                            <img src="./image/voice-icon_1.svg" alt="受講者の声アイコン">
+                            <img src="{% static 'image/voice-icon_1.svg' %}" alt="受講者の声アイコン">
                         </div>
                         <div class="voice__text-img-box">
-                            <img src="./image/voice-text.svg" alt="ダブルクォーテーション">
+                            <img src="{% static 'image/voice-text.svg' %}" alt="ダブルクォーテーション">
                         </div>
                         <p class="voice__text">すごく分かりやすい教え方で、<br class="u-sp">特に初めの方でPythonを<br
                                 class="u-sp">習い始めた時の説明が<br class="u-sp">すごく分かりやすかったです！</p>
@@ -268,20 +269,20 @@
                     <!-- /.voice__wrapper -->
                     <div class="voice__wrapper">
                         <div class="voice__img-box">
-                            <img src="./image/voice-icon_2.svg" alt="受講者の声アイコン">
+                            <img src="{% static 'image/voice-icon_2.svg' %}" alt="受講者の声アイコン">
                         </div>
                         <div class="voice__text-img-box">
-                            <img src="./image/voice-text.svg" alt="ダブルクォーテーション">
+                            <img src="{% static 'image/voice-text.svg' %}" alt="ダブルクォーテーション">
                         </div>
                         <p class="voice__text">常に前向きで<br class="u-sp">優しく指導頂けました。</p>
                     </div>
                     <!-- /.voice__wrapper -->
                     <div class="voice__wrapper">
                         <div class="voice__img-box">
-                            <img src="./image/voice-icon_3.svg" alt="受講者の声アイコン">
+                            <img src="{% static 'image/voice-icon_3.svg' %}" alt="受講者の声アイコン">
                         </div>
                         <div class="voice__text-img-box">
-                            <img src="./image/voice-text.svg" alt="ダブルクォーテーション">
+                            <img src="{% static 'image/voice-text.svg' %}" alt="ダブルクォーテーション">
                         </div>
                         <p class="voice__text">「分かりにくい質問を<br class="u-sp">聞いてもしっかり質問を<br class="u-sp">聞き返して<br
                                 class="u-sp">理解してくれようとしてくれました!」
