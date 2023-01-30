@@ -13,6 +13,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" />
     <!-- favicon -->
     <link rel="icon" sizes="16x16" href="{% static 'favicon.ico' %}" />
 </head>
@@ -20,6 +21,19 @@
 <body>
     <main>
         <header class="header">
+            <div class="header__container l-main__inner">
+                <div class="header__lists">
+                    <div class="header__link_left">
+                        <a href="#about" class="header__link">Vookとは</a>
+                        <a href="#search" class="header__link">商品検索</a>
+                        <a href="#article" class="header__link">記事</a>
+                        <a href="#community" class="header__link">コミュニティ</a>
+                    </div>
+                    <div class="header__link_right">
+                        <a href="#login" class="header__link"><span>ログイン</span></a>
+                        <a href="#register" class="header__link"><span>新規登録</span></a>
+                    </div>
+                </div>
         </header>
         <section id="about" class="about">
             <h1>About</h1>
