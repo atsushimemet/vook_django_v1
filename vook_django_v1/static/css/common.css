@@ -1,4 +1,4 @@
-.header__link_right {
-    text-align: right;
-    display: block;
+.header__lists {
+    display: flex;
+    justify-content: space-between;
 }
